@@ -174,21 +174,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ===== FADE IN ANIMATION =====
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+// ===== FADE IN ANIMATION =====
+// const observerOptions = {
+//     threshold: 0.1,
+//     rootMargin: '0px 0px -50px 0px'
+// };
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add('fade-in');
+//             observer.unobserve(entry.target);
+//         }
+//     });
+// }, observerOptions);
 
-document.querySelectorAll('.section').forEach(section => {
-    section.style.opacity = '0';
-    observer.observe(section);
-});
+// document.querySelectorAll('.section').forEach(section => {
+//     // section.style.opacity = '0';
+//     // observer.observe(section);
+// });
