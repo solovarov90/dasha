@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Дарья Первушина — профессиональный фотограф с модельным опытом. Индивидуальные фотосессии, Love Story в России, Тайланде, Вьетнаме.">
+    <title>Дарья Первушина | Фотограф</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">DARIA PERVUSHINA</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                <li><a href="#price" class="nav-link">Прайс</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle">Фотограф с модельным опытом</p>
+                <h1 class="hero-title">Дарья<br>Первушина</h1>
+                <p class="hero-description">
+                    Россия · Тайланд · Вьетнам
+                </p>
+                <a href="#portfolio" class="hero-btn">Смотреть работы</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/photographer.jpg" alt="Дарья Первушина - фотограф">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">
+                        Со школы занимаюсь модельным бизнесом, но последние 3 года встала по другую сторону камеры.
+                    </p>
+                    <p>
+                        Я профессиональный фотограф, который понимает позирование изнутри.
+                        Мой модельный опыт помогает направлять вас во время съёмки —
+                        вы будете чувствовать себя уверенно и естественно.
+                    </p>
+                    <p>
+                        Работала в трёх странах: <strong>Россия</strong>, <strong>Тайланд</strong>,
+                        <strong>Вьетнам</strong>.
+                        Знаю лучшие локации для съёмок и создаю атмосферные кадры
+                        в любой точке мира.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">года опыта</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">страны</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">довольных клиентов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Портфолио</h2>
+
+            <!-- Portfolio Tabs -->
+            <div class="portfolio-tabs">
+                <button class="tab-btn active" data-tab="individual">Индивидуальные</button>
+                <button class="tab-btn" data-tab="lovestory">Love Story</button>
+            </div>
+
+            <!-- Individual Portfolio -->
+            <div class="portfolio-grid" id="individual">
+                <div class="portfolio-item">
+                    <img src="images/portfolio/individual-1.jpg" alt="Индивидуальная фотосессия">
+                    <div class="portfolio-overlay">
+                        <span>Посмотреть</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio/individual-2.jpg" alt="Индивидуальная фотосессия">
+                    <div class="portfolio-overlay">
+                        <span>Посмотреть</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio/individual-3.jpg" alt="Индивидуальная фотосессия">
+                    <div class="portfolio-overlay">
+                        <span>Посмотреть</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio/individual-4.jpg" alt="Индивидуальная фотосессия">
+                    <div class="portfolio-overlay">
+                        <span>Посмотреть</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio/individual-5.jpg" alt="Индивидуальная фотосессия">
+                    <div class="portfolio-overlay">
+                        <span>Посмотреть</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio/individual-6.jpg" alt="Индивидуальная фотосессия">
+                    <div class="portfolio-overlay">
+                        <span>Посмотреть</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Love Story Portfolio -->
+            <div class="portfolio-grid hidden" id="lovestory">
+                <div class="portfolio-item">
+                    <img src="images/portfolio/love-1.jpg" alt="Love Story фотосессия">
+                    <div class="portfolio-overlay">
+                        <span>Посмотреть</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio/love-2.jpg" alt="Love Story фотосессия">
+                    <div class="portfolio-overlay">
+                        <span>Посмотреть</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio/love-3.jpg" alt="Love Story фотосессия">
+                    <div class="portfolio-overlay">
+                        <span>Посмотреть</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio/love-4.jpg" alt="Love Story фотосессия">
+                    <div class="portfolio-overlay">
+                        <span>Посмотреть</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Price Section -->
+    <section class="section price" id="price">
+        <div class="container">
+            <h2 class="section-title">Прайс</h2>
+
+            <div class="price-grid">
+                <!-- Individual -->
+                <div class="price-card">
+                    <div class="price-card-header">
+                        <h3>Индивидуальная</h3>
+                        <p class="price-duration">1 час — 1 локация</p>
+                    </div>
+                    <div class="price-card-body">
+                        <div class="price-amount">
+                            <span class="price-value">10 000 ₽</span>
+                            <span class="price-alt">3 млн донгов</span>
+                        </div>
+                        <ul class="price-features">
+                            <li>40 фотографий в авторской обработке</li>
+                            <li>Помощь в организации: подбор образов, локации</li>
+                            <li>Предоставляю образы и аксессуары</li>
+                            <li>Помогаю с позированием на съёмке</li>
+                            <li>Снимаю видео на телефон в подарок</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="price-btn">Записаться</a>
+                </div>
+
+                <!-- Love Story -->
+                <div class="price-card featured">
+                    <div class="price-card-header">
+                        <h3>Love Story</h3>
+                        <p class="price-duration">1 час — 1 локация</p>
+                    </div>
+                    <div class="price-card-body">
+                        <div class="price-amount">
+                            <span class="price-value">13 000 ₽</span>
+                            <span class="price-alt">4 млн донгов</span>
+                        </div>
+                        <ul class="price-features">
+                            <li>50 фотографий в авторской обработке</li>
+                            <li>Общие и индивидуальные кадры</li>
+                            <li>Помощь в организации: подбор образов, локации</li>
+                            <li>Предоставляю образы и аксессуары</li>
+                            <li>Помогаю с позированием на съёмке</li>
+                            <li>Снимаю видео на телефон в подарок</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="price-btn">Записаться</a>
+                </div>
+
+                <!-- Family -->
+                <div class="price-card">
+                    <div class="price-card-header">
+                        <h3>Семейная съёмка</h3>
+                        <p class="price-duration">1 час — 1 локация</p>
+                    </div>
+                    <div class="price-card-body">
+                        <div class="price-amount">
+                            <span class="price-value">16 000 ₽</span>
+                            <span class="price-alt">5 млн донгов</span>
+                        </div>
+                        <ul class="price-features">
+                            <li>50 фотографий в авторской обработке</li>
+                            <li>Общие и индивидуальные кадры</li>
+                            <li>Помощь в организации: подбор образов, локации</li>
+                            <li>Предоставляю образы и аксессуары</li>
+                            <li>Помогаю с позированием на съёмке</li>
+                            <li>Снимаю видео на телефон в подарок</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="price-btn">Записаться</a>
+                </div>
+            </div>
+
+            <!-- Info Block -->
+            <div class="price-info">
+                <h3>Памятка для клиентов</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>Отмена съёмки</strong>
+                        <p>При отмене съёмки со стороны заказчика, предоплата не возвращается.</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Перенос даты</strong>
+                        <p>Возможен перенос фотосессии на свободную дату, если предупредите не позднее чем за 2 дня.</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Авторский стиль</strong>
+                        <p>Обращаясь ко мне, вы соглашаетесь со стилем и отработкой фотографа.</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Конфиденциальность</strong>
+                        <p>По умолчанию фото и видео-материалы могут использоваться в портфолио и соцсетях. Полная
+                            конфиденциальность обсуждается заранее.</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Опоздание</strong>
+                        <p>Время съёмки не сдвигается в случае опоздания клиента.</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Хранение файлов</strong>
+                        <p>Фотографии хранятся в хранилище 30 дней, после удаляются. Обязательно скачивайте все
+                            фотографии сразу.</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Оплата</strong>
+                        <p>Возможна оплата в донгах, долларах или рублях.</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Выезд</strong>
+                        <p>Поездки загород и проходы на платные локации заказчик оплачивает дополнительно.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <p class="section-subtitle">Свяжитесь со мной для записи на съёмку</p>
+
+            <div class="contact-links">
+                <a href="https://t.me/foxydy" class="contact-link" target="_blank">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.442-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.477-1.635.099-.002.321.023.465.141.121.1.154.232.17.325.015.093.034.305.019.469z" />
+                    </svg>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://www.instagram.com/foto_foxydy" class="contact-link" target="_blank">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Дарья Первушина. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Закрыть">&times;</button>
+        <button class="lightbox-prev" aria-label="Предыдущее">&lsaquo;</button>
+        <button class="lightbox-next" aria-label="Следующее">&rsaquo;</button>
+        <img src="" alt="" class="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
