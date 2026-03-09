@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель | Daria Pervushina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            display: flex;
+            color: var(--primary);
+        }
+
+        .sidebar {
+            width: 250px;
+            background: var(--primary);
+            color: white;
+            height: 100vh;
+            padding: 2rem 1rem;
+            position: fixed;
+        }
+
+        .main-content {
+            margin-left: 280px;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        h1,
+        h2 {
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <p>Daria Pervushina</p>
+        <hr>
+        <p>ID: G-XDDKHB22CV</p>
+    </div>
+    <div class="main-content">
+        <h1>Панель управления</h1>
+
+        <div class="card">
+            <h2>Google Analytics 4</h2>
+            <p>Ваш сайт подключен к аналитике. Чтобы увидеть подробную статистику посещений, перейдите в консоль Google
+                Analytics.</p>
+            <a href="https://analytics.google.com/analytics/web/" target="_blank" class="btn">Открыть Analytics</a>
+        </div>
+
+        <div class="card">
+            <h2>SEO Статус</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-label">Sitemap</div>
+                    <div class="stat-value">OK</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Robots.txt</div>
+                    <div class="stat-value">OK</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">GA4 ID</div>
+                    <div class="stat-value">Connected</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Инструкция по обновлению</h2>
+            <ul>
+                <li><strong>Фотографии:</strong> Добавляйте новые фото в папку <code>images/portfolio/</code> и
+                    обновляйте пути в <code>index.html</code>.</li>
+                <li><strong>Цены:</strong> Редактируйте секцию <code>price</code> в файле <code>index.html</code>.</li>
+                <li><strong>Деплой:</strong> При пуше в GitHub сайт на Netlify/Vercel обновится автоматически.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
